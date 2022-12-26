@@ -13,6 +13,11 @@
 		9618A5D52959E41E0042B8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9618A5D32959E41E0042B8AB /* Main.storyboard */; };
 		9618A5D72959E41F0042B8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9618A5D62959E41F0042B8AB /* Assets.xcassets */; };
 		9618A5DA2959E41F0042B8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9618A5D82959E41F0042B8AB /* LaunchScreen.storyboard */; };
+		9618A5E42959E4760042B8AB /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618A5E22959E4760042B8AB /* DynamicCell.swift */; };
+		9618A5EC2959EC650042B8AB /* StringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618A5EA2959EC650042B8AB /* StringCell.swift */; };
+		9618A5ED2959EC650042B8AB /* StringCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9618A5EB2959EC650042B8AB /* StringCell.xib */; };
+		9618A5F22959EDC30042B8AB /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618A5F02959EDC30042B8AB /* NumberCell.swift */; };
+		9618A5F32959EDC30042B8AB /* NumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9618A5F12959EDC30042B8AB /* NumberCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		9618A5D62959E41F0042B8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9618A5D92959E41F0042B8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9618A5DB2959E41F0042B8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9618A5E22959E4760042B8AB /* DynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCell.swift; sourceTree = "<group>"; };
+		9618A5EA2959EC650042B8AB /* StringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCell.swift; sourceTree = "<group>"; };
+		9618A5EB2959EC650042B8AB /* StringCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringCell.xib; sourceTree = "<group>"; };
+		9618A5F02959EDC30042B8AB /* NumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
+		9618A5F12959EDC30042B8AB /* NumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		9618A5CC2959E41E0042B8AB /* DynamicCellExample */ = {
 			isa = PBXGroup;
 			children = (
+				9618A5E12959E4420042B8AB /* Cell */,
 				9618A5CD2959E41E0042B8AB /* AppDelegate.swift */,
 				9618A5CF2959E41E0042B8AB /* SceneDelegate.swift */,
 				9618A5D12959E41E0042B8AB /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				9618A5DB2959E41F0042B8AB /* Info.plist */,
 			);
 			path = DynamicCellExample;
+			sourceTree = "<group>";
+		};
+		9618A5E12959E4420042B8AB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9618A5E22959E4760042B8AB /* DynamicCell.swift */,
+				9618A5F02959EDC30042B8AB /* NumberCell.swift */,
+				9618A5F12959EDC30042B8AB /* NumberCell.xib */,
+				9618A5EA2959EC650042B8AB /* StringCell.swift */,
+				9618A5EB2959EC650042B8AB /* StringCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9618A5F32959EDC30042B8AB /* NumberCell.xib in Resources */,
+				9618A5ED2959EC650042B8AB /* StringCell.xib in Resources */,
 				9618A5DA2959E41F0042B8AB /* LaunchScreen.storyboard in Resources */,
 				9618A5D72959E41F0042B8AB /* Assets.xcassets in Resources */,
 				9618A5D52959E41E0042B8AB /* Main.storyboard in Resources */,
@@ -139,6 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9618A5D22959E41E0042B8AB /* ViewController.swift in Sources */,
+				9618A5E42959E4760042B8AB /* DynamicCell.swift in Sources */,
+				9618A5F22959EDC30042B8AB /* NumberCell.swift in Sources */,
+				9618A5EC2959EC650042B8AB /* StringCell.swift in Sources */,
 				9618A5CE2959E41E0042B8AB /* AppDelegate.swift in Sources */,
 				9618A5D02959E41E0042B8AB /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,6 +322,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +330,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cuong.ios.DynamicCellExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +353,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +361,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cuong.ios.DynamicCellExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
